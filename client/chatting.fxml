@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="chatting" maxHeight="300.0" maxWidth="500.0" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.chatting.client.ChattingController">	
+   <children>
+      <TextArea fx:id="textArea" layoutX="190.0" prefHeight="275.0" prefWidth="310.0" />
+      <TextField fx:id="textField" layoutY="275.0" prefHeight="25.0" prefWidth="320.0" />
+      <ImageView fx:id="profilePic" fitHeight="150.0" fitWidth="190.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/default.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="sendBtn" layoutX="320.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleSendBtnAction" prefHeight="25.0" prefWidth="90.0" text="Send" />
+      <Button fx:id="signOutBtn" layoutX="410.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleSignOutBtnAction" prefHeight="25.0" prefWidth="90.0" text="Sign Out" />
+      <Button fx:id="imgBtn" layoutY="150.0" mnemonicParsing="false" onAction="#handleImgAction" prefHeight="25.0" prefWidth="190.0" text="Click to change image!" />
+      <ImageView fitHeight="100.0" fitWidth="190.0" layoutY="175.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
